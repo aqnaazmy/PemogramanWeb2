@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.coffeshope');
+    return view('welcome');
+});
+
+// Route::get('/', function () {
+//     return view('pages.coffeshoop');
+// });
+
+Route::controller(AuthController::class)->group(function () {
+    Route::get('register', 'register')->name('register');
+    Route::post('register', 'registerSave')->name('register.save');
+
+    Route::get('login', 'login')->name('login');
+    Route::post('login', 'loginAction')->name('login.action');
+    Route::get('logout', 'logout')->middleware('auth')->name('logout');
+
 });
