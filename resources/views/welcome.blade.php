@@ -1,4 +1,4 @@
-@include('layouts.head');
+@include('layouts.head')
 
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -10,31 +10,20 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			  <li class="nav-item"><a href="#aboute" class="nav-link">Aboute</a></li>
+	          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+	          <li class="nav-item"><a href="#ftco-testimony" class="nav-link">Testimony</a></li>
+	          <li class="nav-item"><a href="#contac" class="nav-link">Contact</a></li>
 	          <li class="nav-item cart"><a href="#" class="nav-link"><span class="icon icon-shopping_cart"></span></a>
               <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">login</a></li>
 			  <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">register</a></li>
-            <!-- @if (Route::has('login'))
-            @auth
-                <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-			  
-                    @if (Route::has('register'))
-                    @endif
-                @endauth
-            @endif -->
-
 	        </ul>
-	      </div>
 		</div>
 	  </nav>
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url(aset/images/bg_1.jpg);">
+      <div class="slider-item" style="background-image: url(aset/images/bg_1.jpg)">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -153,16 +142,16 @@
     	</div>
     </section>
 
-    <section class="ftco-about d-md-flex">
+    <section class="ftco-about d-md-flex" id = "aboute">
     	<div class="one-half img" style="background-image: url(aset/images/about.jpg);"></div>
     	<div class="one-half ftco-animate">
     		<div class="overlap">
 	        <div class="heading-section ftco-animate ">
-	        	<span class="subheading">Discover</span>
-	          <h2 class="mb-4">Our Story</h2>
+	        	<span class="subheading">Aboute</span>
+	          <h2 class="mb-4">Coffe Blend</h2>
 	        </div>
 	        <div>
-	  				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+	  				<p>Welcome to Coffee Bland! Located in the heart of the city, we are a coffee shop dedicated to providing a high-quality coffee experience. With carefully selected coffee beans from around the world, we prepare every cup with care and love. Enjoy the cozy and friendly atmosphere at our place, where every visit supports the local community and sustainable coffee farmers. Come and experience the warmth and deliciousness at Coffee Bland!</p>
 	  			</div>
   			</div>
     	</div>
@@ -178,7 +167,7 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Easy to Order</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Enjoy the convenience of ordering your favorite coffee at Coffee Bland. With just a few clicks, you can place your order through our website or app, and your coffee will be ready for you in no time.</p>
               </div>
             </div>      
           </div>
@@ -189,7 +178,7 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>We understand that your time is precious. That’s why we are committed to delivering your coffee quickly and promptly, so you can enjoy our fresh brew without the wait.</p>
               </div>
             </div>      
           </div>
@@ -199,7 +188,7 @@
               	<span class="flaticon-coffee-bean"></span></div>
               <div class="media-body">
                 <h3 class="heading">Quality Coffee</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>At Coffee Bland, we use only the finest quality coffee beans, carefully selected to ensure excellence. Each cup we serve is crafted with care to provide you with an exceptional coffee experience.</p>
               </div>
             </div>    
           </div>
@@ -207,14 +196,14 @@
     	</div>
     </section>
 
-    <section class="ftco-section">
+    <section class="ftco-section" id="menu">
     	<div class="container">
     		<div class="row align-items-center">
     			<div class="col-md-6 pr-md-5">
     				<div class="heading-section text-md-right ftco-animate">
 	          	<span class="subheading">Discover</span>
 	            <h2 class="mb-4">Our Menu</h2>
-	            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+	            <p class="mb-4">Enjoy a wide range of coffee options from classic espresso to special creations, along with various teas, cold beverages, and snacks made from high-quality ingredients at Coffee Bland. Whether you're looking for something warm and comforting or cool and refreshing, we have something to satisfy your taste. Explore our menu and discover your new favorite!</p>
 	            <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">View Full Menu</a></p>
 	          </div>
     			</div>
@@ -300,7 +289,7 @@
           <div class="col-md-7 heading-section ftco-animate text-center">
           	<span class="subheading">Discover</span>
             <h2 class="mb-4">Best Coffee Sellers</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>Discover the most popular coffee drinks at Coffee Bland! From bold espresso to lattes with a sweet hint of vanilla, these customer favorites are sure to satisfy your taste buds. Try one of our best sellers and see why they're so loved!</p>
           </div>
         </div>
         <div class="row">
@@ -356,28 +345,28 @@
     	<div class="container-wrap">
     		<div class="row no-gutters">
 					<div class="col-md-3 ftco-animate">
-						<a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-1.jpg);">
+						<a href="#" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-1.jpg);">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-search"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-3.jpg);">
+						<a href="#" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-3.jpg);">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-search"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-3.jpg);">
+						<a href="#" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-3.jpg);">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-search"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-4.jpg);">
+						<a href="#" class="gallery img d-flex align-items-center" style="background-image: url(aset/images/gallery-4.jpg);">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-search"></span>
     					</div>
@@ -476,7 +465,7 @@
 		
 	
 
-    <footer class="ftco-footer ftco-section img">
+    <footer class="ftco-footer ftco-section img" id = "contac">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
@@ -558,24 +547,9 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  @include('layouts.loader')
 
-  <script src="aset/js/jquery.min.js"></script>
-  <script src="aset/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="aset/js/popper.min.js"></script>
-  <script src="aset/js/bootstrap.min.js"></script>
-  <script src="aset/js/jquery.easing.1.3.js"></script>
-  <script src="aset/js/jquery.waypoints.min.js"></script>
-  <script src="aset/js/jquery.stellar.min.js"></script>
-  <script src="aset/js/owl.carousel.min.js"></script>
-  <script src="aset/js/jquery.magnific-popup.min.js"></script>
-  <script src="aset/js/aos.js"></script>
-  <script src="aset/js/jquery.animateNumber.min.js"></script>
-  <script src="aset/js/bootstrap-datepicker.js"></script>
-  <script src="aset/js/jquery.timepicker.min.js"></script>
-  <script src="aset/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="aset/js/google-map.js"></script>
-  <script src="aset/js/main.js"></script>
+
     
   </body>
 </html>

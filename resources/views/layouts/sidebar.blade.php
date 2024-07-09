@@ -18,11 +18,6 @@
         <span>Dashboard</span></a>
     </li>
 
-    {{-- <li class="nav-item">
-      <a class="nav-link" href="{{ route('alternatif') }}">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Alternatif</span></a>
-    </li>
 
 
     <li class="nav-item">
@@ -30,24 +25,23 @@
         <i class="fas fa-mask"></i>
         <span>Kriteria</span></a>
     </li>
-    
+
     <li class="nav-item">
       <a class="nav-link" href="{{ route('penilaian.index') }}">
         <i class="fas fa-pills"></i>
         <span>penilaian</span></a>
     </li>
-    
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('calculate.topsis')}}">
+      <a class="nav-link" href="{{ route('calculate.saw')}}">
         <i class="fas fa-pills"></i>
         <span>Calculate</span></a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('products') }}">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Products</span></a>
-    </li> --}}
+      <a class="nav-link" href="{{ route('alternatif') }}">
+        <i class="fas fa-mask"></i>
+        <span>Alternatif</span></a>
+    </li>
     
     <li class="nav-item">
       <a class="nav-link" href="/profile">
