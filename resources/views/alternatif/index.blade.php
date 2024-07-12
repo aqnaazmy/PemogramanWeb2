@@ -1,6 +1,6 @@
 @extends('layouts.app')
   
-@section('title', 'Pages/Alternatif')
+@section('title', 'Alternatif')
   
 @section('contents')
     <div class="d-flex align-items-center justify-content-between">
@@ -31,7 +31,7 @@
                         <td class="align-middle">{{ $rs->nama}}</td>
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="#" type="button" class="btn text-white" style="background-color: rgb(92, 105, 188)">Detail</a>
+                                <!-- <a href="#" type="button" class="btn text-white" style="background-color: rgb(92, 105, 188)">Detail</a> -->
                                 <a href="{{route('alternatif.edit', $rs->id)}}" type="button" class="btn text-white" style="background-color: mediumslateblue">Edit</a>
                                 <form action="{{route('alternatif.destroy', $rs->id )}}" method="POST" type="button" class="btn p-0" style="background-color: burlywood" onsubmit="return confirm('Delete?')">
                                     @csrf

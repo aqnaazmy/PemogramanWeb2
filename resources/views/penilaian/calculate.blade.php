@@ -6,7 +6,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-body">
-            <h4>Matriks Penilaian</h4>
+            <h4>Table Penilaian</h4>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
@@ -30,7 +30,7 @@
                 </table>
             </div>
 
-            <h4>Matriks Normalisasi</h4>
+            <h4>Nilai Normalisasi</h4>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
@@ -54,13 +54,13 @@
                 </table>
             </div>
 
-            <h4>Nilai Preferensi</h4>
+            <h4>Nilai Hasil</h4>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>Nama Alternatif</th>
-                            <th>Nilai Preferensi</th>
+                            <th>Nilai Hasil</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -13,20 +12,29 @@ use Illuminate\Validation\ValidationException;
 class AuthController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display the registration form.
      */
     public function register()
     {
-        return view('auth/register');
+        return view('auth.register');
     }
     
+    /**
+     * Handle registration request.
+     */
     public function registerSave(Request $request)
     {
-        Validator::make($request->all(), [
-            'name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required|confirmed'
-        ])->validate();
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('register')
+                             ->withErrors($validator)
+                             ->withInput();
+        }
   
         User::create([
             'name' => $request->name,
@@ -35,20 +43,26 @@ class AuthController extends Controller
             'level' => 'Admin'
         ]);
   
-        return redirect()->route('login');
+        return redirect()->route('dashboard')->with('success', 'Registration successful!');
     }
     
     public function login()
     {
-        return view('auth/login');
+        return view('auth.login');
     }
 
     public function loginAction(Request $request)
     {   
-        Validator::make($request->all(), [
+        $validator = Validator::make($request->all(), [
             'email' => 'required|email',
             'password' => 'required'
-        ])->validate();
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('login')
+                             ->withErrors($validator)
+                             ->withInput();
+        }
   
         if (!Auth::attempt($request->only('email', 'password'), $request->boolean('remember'))) {
             throw ValidationException::withMessages([
@@ -66,10 +80,10 @@ class AuthController extends Controller
         Auth::guard('web')->logout();
   
         $request->session()->invalidate();
+        $request->session()->regenerateToken();
   
         return redirect('/');
     }
-
 
     public function profile()
     {
